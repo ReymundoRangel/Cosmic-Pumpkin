@@ -1,0 +1,90 @@
+<h1>
+   {{title}}
+</h1>
+
+<form class="form-horizontal">
+    <div class="panel panel-default">
+        <div class="panel-heading well">
+            <div class="panel-title">
+                <div class="row">
+                    <div class="col-xs-6 col-sm-3">
+                        <label class="label-200">BASIC FRENCH WORDS</label>
+                    </div>
+                    <div class="col-xs-6 col-sm-3">
+                        <label class="label-200">Section 1</label>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end header -->
+
+        <!-- body -->
+        <div class="panel-body" id="Entry" ng-show="showEntry()">
+            <!-- Question -->
+            <div class="row">
+                <div class="col-xs-12">
+                    <label for="Question">Question:</label>
+                    <span id="Question">
+                        What is the French word for "hello"?
+                    </span>
+                </div>
+            </div>
+
+            <!-- Answer Given -->
+            <div class="row">
+                <div class="col-xs-12">
+                    <label for="AnswerGiven">Answer:</label>
+                    <input type="text" id="AnswerGiven" maxlength="1000" size="40" />
+                </div>
+            </div>
+
+
+            <!-- Answer (shown only when reviewing incorrect answer given.) -->
+            <div class="row">
+                <div class="col-xs-12">
+                    <label for="Answer">Correct:</label>
+                     <span id="Answer">
+                         Bonjour.
+                    </span>
+                </div>
+            </div>
+
+            <!-- Messages -->
+            <div class="row">
+                <!-- Shown when correct answer given. -->
+                <div class="col-xs-12 col-md-6">
+                    <label class="large-green">Correct!</label>
+                </div>
+                <!-- Shown when point is in review. -->
+                <div class="col-xs-12 col-md-6">
+                    <label class="medium-green">Review</label>
+                </div>
+                <!-- Shown when incorrect answer given. -->
+                <div class="col-xs-12 col-md-6">
+                    <label class="large-red">Incorrect.</label>
+                </div>
+                 <!-- Score on this point shown when incorrect answer given, to give people a sense of how far they have to go on this point. -->
+                <div class="col-xs-12 col-md-6">
+                    <label for="Score">Score:</label>
+                    <span id="Score">
+                         50%
+                    </span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-md-6">
+                    <!-- Temporary button for development.  Allows us to quickly restart from the beginning. -->
+                    <button class="btn btn-warning"> 
+                        <span class="glyphicon glyphicon-remove"></span> 
+                       &nbsp;Restart
+                    </button>
+                </div>
+                <div class="col-xs-12 col-md-6"> 
+                    <button class="btn btn-primary">
+                        <span class="glyphicon glyphicon-save"></span>
+                        Next
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>    

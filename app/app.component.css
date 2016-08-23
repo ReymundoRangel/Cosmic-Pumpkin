@@ -1,0 +1,27 @@
+﻿
+/* styles for message display */
+.large-red {
+    color: red;
+    font-size: large;
+}
+
+.large-green {
+    color: green;
+    font-size: large;
+}
+
+.medium-green {
+    color: green;
+    font-size: medium;
+}
+
+/* To provide fixed width labels that align properly when stacked. */
+.label-50 {
+    width: 50px;
+}
+.label-100 {
+    width: 100px;
+}
+.label-200 {
+    width: 200px;
+}
